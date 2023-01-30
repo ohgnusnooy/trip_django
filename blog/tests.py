@@ -1,3 +1,5 @@
+#테스트 코드
+
 from django.test import TestCase, Client
 from bs4 import BeautifulSoup
 from .models import Post
@@ -7,9 +9,9 @@ class TestView(TestCase):
     def setUp(self):
         self.client = Client()
 
-    def navbar_test(self,soup):
-        navbar=soup.nav
-        self.assertIn('Blog',navbar.text)
+    def navbar_test(self, soup):
+        navbar = soup.nav
+        self.assertIn('Blog', navbar.text)
         self.assertIn('About Me', navbar.text)
 
         logo_btn = navbar.find('a', text='Do It Django')
@@ -32,6 +34,7 @@ class TestView(TestCase):
         soup = BeautifulSoup(response.content, 'html.parser')
 
         self.assertEqual(soup.title.text, 'Blog')
+        
         self.navbar_test(soup)
 
         self.assertEqual(Post.objects.count(), 0)
