@@ -3,7 +3,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title> About Sungho </title>
+    <title> About Trip </title>
 
     <link rel="stylesheet" href="{% static 'blog/bootstrap/bootstrap.min.css' %}" media="screen">
     <link rel="stylesheet" href="{% static 'single_pages/css/about_me.css' %}" media="screen">
@@ -17,24 +17,33 @@
     <div class="container mt-4">
         <div class="row">
             <div class="col-lg-8">
-                <h1>안녕하세요. Sungho 입니다.</h1>
+                <h1>안녕하세요. 방랑식객입니다.</h1>
                 <br/>
                 <p class="lead">
-                    여행과 컴퓨터를 좋아합니다.<br/>
-                    겸허한 개발자가 되고 싶습니다.
+                    자연과 여행을 좋아합니다.<br/>
                 </p>
 
                 <ul>
-                    <li>WORK EXPERIENCE</li>
+                    <li>Overseas Travel (해외여행)</li>
                     <ul>
-                        <li>네이버 (2029.10 ~)</li>
-                        <li>넥슨 (2025.03 ~ 2029.09)</li>
-                        <li>야놀자 (2024.02 ~ 2025.02)</li>
+                        <li>중국 - 상해, 서안, 북경</li>
+                        <li>일본 - 후쿠오카</li>
+                        <li>필리핀 - 마닐라</li>
+                        <li>태국 - 방콕, 파타이</li>
+                        <li>뉴질랜드</li>
+                        <li>캄보디아</li>
+                        <li>베트남</li>
+                        <li>라오스</li>
                     </ul>
                     <br/>
-                    <li>EDUCATION</li>
+                    <li>domestic travel (국내여행)</li>
                     <ul>
-                        <li>항공컴퓨터 전공(Computer Engineering), 한서대학교 (2019.03~2025.03)</li>
+                        <li>경상북도 - 경주</li>
+                        <li>충청남도 - 당진, 서산</li>
+                        <li>전라북도 - 변산반도</li>
+                        <li>강원도 - 설악산, 원주, 철원</li>
+                        <li>DMZ</li>
+                        <li>제주도</li>
                     </ul>
 
                 </ul>
@@ -51,36 +60,36 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>PORTFOLIO</h1>
+                <h1>Area List</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <div class="card" data-toggle="modal" data-target="#spring">
-                    <img class="card-img-top" src="{% static 'single_pages/images/spring.png' %}">
+                <div class="card" data-toggle="modal" data-target="#tai">
+                    <img class="card-img-top" src="{% static 'single_pages/images/tai.jpg' %}">
                     <div class="card-body">
-                        <h5 class="card-title">Spring 프레임 워크로 쇼핑몰 만들기</h5>
-                        <p>Java Spring Framework를 통해서 종합 쇼핑 사이트를 구축했습니다.</p>
+                        <h5 class="card-title">태국여행 - 방콕</h5>
+                        <p>2022.11.18 ~ 2022.11.25</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
-                <div class="card" data-toggle="modal" data-target="#django">
-                    <img class="card-img-top" src="{% static 'single_pages/images/django.png' %}">
+                <div class="card" data-toggle="modal" data-target="#japan">
+                    <img class="card-img-top" src="{% static 'single_pages/images/japan.jpg' %}">
                     <div class="card-body">
-                        <h5 class="card-title">django를 활용해서 이력서를 만들었습니다</h5>
-                        <p>추후에 django 구조를 사용해서 온라인 뉴스 사이트를 구성할 예정입니다.</p>
+                        <h5 class="card-title">일본여행 - 후쿠오카</h5>
+                        <p>2015년 후쿠오카 여행</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
-                <div class="card" data-toggle="modal" data-target="#express">
-                    <img class="card-img-top" src="{% static 'single_pages/images/express.png' %}">
+                <div class="card" data-toggle="modal" data-target="#kor">
+                    <img class="card-img-top" src="{% static 'single_pages/images/kor.jpg' %}">
                     <div class="card-body">
-                        <h5 class="card-title">node.js express를 사용해서 채팅 프로그램을 만들었습니다.</h5>
-                        <p>실시간 경매 어플리케이션도 구축했습니다.</p>
+                        <h5 class="card-title">변산반도</h5>
+                        <p>전라북도 변산반도 여행</p>
                     </div>
                 </div>
             </div>
@@ -90,11 +99,11 @@
 </section>
 
 <!-- Modal -->
-<div class="modal fade" id="spring" tabindex="-1" role="dialog" aria-labelledby="springModalLabel" aria-hidden="true">
+<div class="modal fade" id="tai" tabindex="-1" role="dialog" aria-labelledby="taiModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="springModalLabel">스프링에 대한 기본을 배울 수 있었습니다.</h5>
+                <h5 class="modal-title" id="taiModalLabel">태국의 문화 보기.</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -102,10 +111,10 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-lg-7">
-                        <img class="img-fluid" src="{% static 'single_pages/images/spring.png' %}">
+                        <img class="img-fluid" src="{% static 'single_pages/images/tai2.jpg' %}">
                     </div>
                     <div class="col-lg-5">
-                        <p>웹개발의 기본적인 프로세스와 MVC모델에 대한 정의를 깊게 배웠습니다.</p>
+                        <p>바다에서 먹은 밥이 맛있었습니다.</p>
                     </div>
                 </div>
             </div>
@@ -116,11 +125,11 @@
     </div>
 </div>
 
-<div class="modal fade" id="django" tabindex="-1" role="dialog" aria-labelledby="djangoModalLabel" aria-hidden="true">
+<div class="modal fade" id="japan" tabindex="-1" role="dialog" aria-labelledby="japanModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="djangoModalLabel">파이썬과 장고의 기본 모델에 대해서 학습했습니다</h5>
+                <h5 class="modal-title" id="japanModalLabel">가까운 일본 여행</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -128,10 +137,10 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-lg-7">
-                        <img class="img-fluid" src="{% static 'single_pages/images/django.png' %}">
+                        <img class="img-fluid" src="{% static 'single_pages/images/japan2.jpg' %}">
                     </div>
                     <div class="col-lg-5">
-                        <p>추후에 웹 개발과 서버개발에 대한 기본 이론을 배울 수 있습니다.</p>
+                        <p>일본의 식문화와 언어를 배우러 갔습니다..</p>
 
                     </div>
                 </div>
@@ -144,11 +153,11 @@
 </div>
 
 
-<div class="modal fade" id="express" tabindex="-1" role="dialog" aria-labelledby="expressModalLabel" aria-hidden="true">
+<div class="modal fade" id="kor" tabindex="-1" role="dialog" aria-labelledby="korModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="expressModalLabel">node.js로 express 배우기</h5>
+                <h5 class="modal-title" id="korModalLabel">한국의 자연풍경</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -156,10 +165,10 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-lg-7">
-                        <img class="img-fluid" src="{% static 'single_pages/images/express.png' %}">
+                        <img class="img-fluid" src="{% static 'single_pages/images/kor2.jpg' %}">
                     </div>
                     <div class="col-lg-5">
-                        <p>node.js django spring 을 경험함 으로써 각 프로그램의 용도에 맞게 프레임워크를 설정할 수 있게 되었습니다.</p>
+                        <p>국내의 숨은 명소를 찾으러 갔습니다.</p>
                     </div>
                 </div>
             </div>

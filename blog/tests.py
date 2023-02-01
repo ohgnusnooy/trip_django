@@ -45,15 +45,15 @@ class TestView(TestCase):
 
     def navbar_test(self, soup):
         navbar = soup.nav
-        self.assertIn('Blog', navbar.text)
-        self.assertIn('About Me', navbar.text)
-        logo_btn = navbar.find('a', text='Do It Django')
+        self.assertIn('Story', navbar.text)
+        self.assertIn('Area List', navbar.text)
+        logo_btn = navbar.find('a', text='TripOn')
         self.assertEqual(logo_btn.attrs['href'], '/')
         home_btn = navbar.find('a', text='Home')
         self.assertEqual(home_btn.attrs['href'], '/')
-        blog_btn = navbar.find('a', text='Blog')
+        blog_btn = navbar.find('a', text='Story')
         self.assertEqual(blog_btn.attrs['href'], '/blog/')
-        about_me_btn = navbar.find('a', text='About Me')
+        about_me_btn = navbar.find('a', text='Area List')
         self.assertEqual(about_me_btn.attrs['href'], '/about_me/')
 
     def category_card_test(self, soup):
@@ -75,7 +75,7 @@ class TestView(TestCase):
         response = self.client.get('/blog/')
         self.assertEqual(response.status_code, 200)
         soup = BeautifulSoup(response.content, 'html.parser')
-        self.assertEqual(soup.title.text, 'Blog')
+        self.assertEqual(soup.title.text, 'Story')
         self.navbar_test(soup)
         self.category_card_test(soup)
         main_area = soup.find('div', id='main-area')
