@@ -1,3 +1,5 @@
+#버전 관리 대상이 아닌 파일 목록.
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
